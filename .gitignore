@@ -1,10 +1,10 @@
 work_dirs
+work_logs
 show_dir
 data
 *.pyc
 *.pt
 *.xlsx
 *.png
-*.ckpt
 .vscode
 __pycache__
