@@ -1,0 +1,6 @@
+impervious surface
+building
+low vegetation
+tree
+car
+clutter

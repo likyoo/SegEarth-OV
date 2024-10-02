@@ -1,0 +1,7 @@
+background
+building
+road
+car
+tree
+vegetation
+human

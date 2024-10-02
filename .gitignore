@@ -1,0 +1,10 @@
+work_dirs
+show_dir
+data
+*.pyc
+*.pt
+*.xlsx
+*.png
+*.ckpt
+.vscode
+__pycache__

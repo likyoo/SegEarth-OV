@@ -1,0 +1,6 @@
+road,parking lot
+building
+low vegetation
+tree
+car
+clutter,background
