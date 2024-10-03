@@ -3,7 +3,7 @@
 <h1>SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images</h1>
 
 <div>
-    <strong>-- make OVSS possible in remote sensing contexts</strong>
+    <strong>make OVSS possible in remote sensing contexts</strong>
 </div>
 
 <div>
@@ -19,7 +19,7 @@
 
 <div>
     <h4 align="center">
-        • <a href="https://likyoo.github.io/SegEarth-OV/" target='_blank'>[Project]</a> • <a href="https://arxiv.org/abs/" target='_blank'>[arXiv]</a> • <a href="https://colab.research.google.com/drive/1a-NNz_2maesvszk4Xff5PKY02_moPqt6#scrollTo=Pz9QGEcFBGtK" target='_blank'>[Colab]</a> •
+        • <a href="https://likyoo.github.io/SegEarth-OV/" target='_blank'>[Project]</a> • <a href="https://arxiv.org/abs/2410.01768" target='_blank'>[arXiv]</a> • <a href="https://colab.research.google.com/drive/1a-NNz_2maesvszk4Xff5PKY02_moPqt6#scrollTo=Pz9QGEcFBGtK" target='_blank'>[Colab]</a> •
     </h4>
 </div>
 
@@ -65,7 +65,6 @@ Please refer to [dataset_prepare.md](https://github.com/likyoo/SegEarth-OV/blob/
 python demo.py
 ```
 
-
 ## Model evaluation
 Single-GPU:
 
@@ -91,13 +90,16 @@ We provide the comparison results (in Appendix) on five datasets without backgro
 </div>
 
 
-
 ## Citation
 
 ```
-
+@article{li2024segearth,
+  title={SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images},
+  author={Li, Kaiyu and Liu, ruixun and Cao, Xiangyong and Meng, Deyu and Zhi Wang},
+  journal={arXiv preprint arXiv:2410.01768},
+  year={2024}
+}
 ```
-
 
 ## Acknowledgement
 This implementation is based on [ClearCLIP](https://github.com/mc-lan/ClearCLIP) and [FeatUp](https://github.com/mhamilton723/FeatUp). Thanks for the awesome work.
