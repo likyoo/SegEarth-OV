@@ -1,0 +1,447 @@
+<html></html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!--
+    <script src="./resources/jsapi" type="text/javascript"></script>
+    <script type="text/javascript" async>google.load("jquery", "1.3.2");</script>
+   -->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Avenir Book';
+            src: url("./fonts/Avenir_Book.ttf"); /* File to be stored at your site */
+        }
+        body {
+            font-family: "Avenir Book", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight:300;
+            font-size:14px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1200px;
+        }
+        h1 {
+            font-weight:300;
+        }
+        h2 {
+            font-weight:300;
+        }
+
+        p {
+            font-weight:300;
+            line-height: 1.4;
+        }
+
+        code {
+            font-size: 0.8rem;
+            margin: 0 0.2rem;
+            padding: 0.5rem 0.8rem;
+            white-space: nowrap;
+            background: #efefef;
+            border: 1px solid #d3d3d3;
+            color: #000000;
+            border-radius: 3px;
+        }
+
+        pre > code {
+            display: block;
+            white-space: pre;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+        }
+
+        pre.prettyprint > code {
+            border: none;
+        }
+
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+        .image {
+            flex-basis: 40%
+        }
+        .text {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .disclaimerbox {
+            background-color: #eee;
+            border: 1px solid #eeeeee;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+            padding: 20px;
+        }
+
+        video.header-vid {
+            height: 140px;
+            border: 1px solid black;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+        }
+
+        img.header-img {
+            height: 140px;
+            border: 1px solid black;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+        }
+
+        img.rounded {
+            border: 0px solid #eeeeee;
+            border-radius: 10px ;
+            -moz-border-radius: 10px ;
+            -webkit-border-radius: 10px ;
+
+        }
+
+        a:link,a:visited
+        {
+            color: #1367a7;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #208799;
+        }
+
+        td.dl-link {
+            height: 160px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+            box-shadow:
+                    0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                    5px 5px 0 0px #fff, /* The second layer */
+                    5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                    10px 10px 0 0px #fff, /* The third layer */
+                    10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                    15px 15px 0 0px #fff, /* The fourth layer */
+                    15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                    20px 20px 0 0px #fff, /* The fifth layer */
+                    20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                    25px 25px 0 0px #fff, /* The fifth layer */
+                    25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+            margin-left: 10px;
+            margin-right: 45px;
+        }
+
+
+        .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+            box-shadow:
+                    0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                    5px 5px 0 0px #fff, /* The second layer */
+                    5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                    10px 10px 0 0px #fff, /* The third layer */
+                    10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 30px;
+            margin-bottom: 5px;
+        }
+
+        .vert-cent {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        hr
+        {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        }
+    </style>
+    <title>SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images</title>
+</head>
+
+<body>
+<br>
+<span style="font-size:36px">
+    <div style="text-align: center;">
+      🌍SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images
+    </div>
+</span>
+<br>
+<br>
+<br>
+<table align="center" width="550px">
+    <tr>
+        <td align="center" width="100px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://likyoo.github.io">Kaiyu Li</a><sup>1</sup></span>
+            </div>
+        </td>
+        <td align="center" width="100px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="">Ruixun Liu</a><sup>1</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="150px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://gr.xjtu.edu.cn/en/web/caoxiangyong">Xiangyong Cao</a><sup>&#9993 1</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="100px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://gr.xjtu.edu.cn/en/web/dymeng">Deyu Meng</a><sup>1</sup></span>
+            </div>
+        </td>
+
+        <td align="center" width="100px">
+            <div style="text-align: center;">
+                <span style="font-size:16px"><a href="https://gr.xjtu.edu.cn/en/web/zhiwang">Zhi Wang</a><sup>1</sup></span>
+            </div>
+        </td>
+
+    </tr>
+</table>
+
+<br>
+
+<table align="center" width="300px">
+    <tbody>
+    <tr>
+        <td align="center" width="100px">
+            <center>
+                <span style="font-size:16px">Xi'an Jiaotong University<sup>1</sup></span>
+            </center>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+
+
+<!--<table align="center" width="700px">-->
+<!--    <tbody>-->
+<!--    <tr>-->
+<!--        <td align="center" width="300px">-->
+<!--            <center>-->
+<!--                <span style="font-size:16px"><sup>&star;</sup>equal contribution</span>-->
+<!--            </center>-->
+<!--        </td>-->
+
+<!--        <td align="center" width="300px">-->
+<!--            <center>-->
+<!--                <span style="font-size:16px"><sup>&#9993</sup>corresponding author</span>-->
+<!--            </center>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+
+<br>
+<table align="center" width="500px">
+    <tbody>
+    <tr>
+        <td align="center" width="150px">
+            <div style="text-align: center;">
+                <span style="font-size:20px">
+                    Code
+                    <a href="https://github.com/likyoo/SegEarth-OV">[GitHub]</a>
+                </span>
+            </div>
+        </td>
+
+        <td align="center" width="150px">
+            <div style="text-align: center;">
+                <span style="font-size:20px">
+                    Paper
+                    <a href="https://arxiv.org/abs/2410.01768">[arXiv]</a>
+                </span>
+            </div>
+        </td>
+
+        <td align="center" width="150px">
+          <div style="text-align: center;">
+              <span style="font-size:20px">
+                  Demo
+                  <a href="https://colab.research.google.com/drive/1a-NNz_2maesvszk4Xff5PKY02_moPqt6#scrollTo=Pz9QGEcFBGtK">[Colab]</a>
+              </span>
+          </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<hr>
+
+<!-- <div style="text-align: center;">
+    <h2>Teaser</h2>
+</div> -->
+
+
+<p style="text-align:justify; text-justify:inter-ideograph;">
+<table>
+    <tr>
+        <td>
+            <div style="text-align: center;">
+                <img src="resources/fig_title.jpg" width="100%">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+              Visualization and performance of SegEarth-OV on open-vocabulary semantic segmentation of remote sensing images. We evaluate on 17 remote sensing datasets (including semantic segmentation, building extraction, road extraction, and flood detection tasks), and our SegEarth-OV consistently generates high-quality segmentation masks.
+            </p>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Abstract</h2>
+</div>
+
+<table>
+    <tr>
+        <td>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+              Remote sensing image plays an irreplaceable role in fields such as agriculture, water resources, military, and disaster relief. Pixel-level interpretation is a critical aspect of remote sensing image applications; however, a prevalent limitation remains the need for extensive manual annotation. For this, we try to introduce open-vocabulary semantic segmentation (OVSS) into the remote sensing context. However, due to the sensitivity of remote sensing images to low-resolution features, distorted target shapes and ill-fitting boundaries are exhibited in the prediction mask. To tackle this issue, we propose a simple and general upsampler, SimFeatUp, to restore lost spatial information in deep features in a training-free style. Further, based on the observation of the abnormal response of local patch tokens to [CLS] token in CLIP, we propose to execute a straightforward subtraction operation to alleviate the global bias in patch tokens. Extensive experiments are conducted on 17 remote sensing datasets spanning semantic segmentation, building extraction, road detection, and flood detection tasks. Our method achieves an average of 5.8%, 8.2%, 4%, and 15.3% improvement over state-of-the-art methods on 4 tasks.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Pipeline</h2>
+</div>
+
+<table>
+    <tr>
+        <td>
+            <div style="text-align: center;">
+                <img src="resources/pipeline.jpg" width="1000px">
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                <br>
+                Illustration of the proposed method.
+                (a) is the training process of SimFeatUp. CLIP is frozen and only SimFeatUp is useful in reasoning.
+                (b) is the reasoning process of SegEarth-OV. The LR feature maps from CLIP are upsampled by SimFeatUp and then the [CLS] token is subtracted to alleviate global bias. For better presentation, the color renderings follow FeatUp.
+            </p>
+        </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Quantitative Results</h2>
+</div>
+
+<table>
+    <tr>
+        <td>
+            <!-- <p>
+                <b>
+                    title
+                </b>
+            </p>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                xxx
+            </p> -->
+            <div style="text-align: center;">
+                <img src="resources/results1.png" width="100%">
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+      <td>
+          <!-- <p>
+              <b>
+                  title
+              </b>
+          </p>
+          <p style="text-align:justify; text-justify:inter-ideograph;">
+              xxx
+          </p> -->
+          <div style="text-align: center;">
+              <img src="resources/results2.png" width="100%">
+          </div>
+      </td>
+    </tr>
+
+
+</table>
+
+<br>
+<hr>
+<div style="text-align: center;">
+    <h2>Visualizations</h2>
+</div>
+
+<table>
+    <tr>
+        <td>
+            <!-- <p style="text-align:justify; text-justify:inter-ideograph;">
+                xxx
+            </p> -->
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+              <strong>Visualizations of the segmentation results</strong>
+            </p>
+            <div style="text-align: center;">
+                <img src="resources/sample.jpg" width="100%">
+            </div>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+              <strong>More Visualization ...</strong>
+            </p>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                OpenEarthMap
+            </p>
+            <div style="text-align: center;">
+                <img src="resources/OEM.jpg" width="90%">
+            </div>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                UDD5
+            </p>
+            <div style="text-align: center;">
+                <img src="resources/UDD5.jpg" width="90%">
+            </div>
+            <p style="text-align:justify; text-justify:inter-ideograph;">
+                WHU Building
+            </p>
+            <div style="text-align: center;">
+                <img src="resources/WHU.jpg" width="90%">
+            </div>
+        </td>
+    </tr>
+
+</table>
+
+<br>
+<hr>
+
+<div style="text-align: center;">
+    <h2>Acknowledgements</h2>
+</div>
+<p>
+    Based on a template by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
+</p>
+
+<br>
+<br>
+<br>
+
+</body>
+</html>

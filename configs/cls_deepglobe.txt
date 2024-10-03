@@ -1,7 +1,0 @@
-urban
-agriculture
-rangeland
-forest
-water
-barren
-background

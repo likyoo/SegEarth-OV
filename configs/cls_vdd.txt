@@ -1,7 +1,0 @@
-background
-facade
-road
-vegetation
-vehicle
-roof
-water
