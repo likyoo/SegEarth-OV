@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 from torchvision import transforms
 from segearth_segmentor import SegEarthSegmentation
 
-img = Image.open('/data/lky/data/OpenEarthMap/img_dir/val/aachen_42.tif')
+img = Image.open('demo/oem_koeln_50.tif')
+
 name_list = ['background', 'bareland,barren', 'grass', 'pavement', 'road',
              'tree,forest', 'water,river', 'cropland', 'building,roof,house']
 
@@ -48,4 +49,4 @@ ax[1].imshow(seg_pred, cmap='viridis')
 ax[1].axis('off')
 plt.tight_layout()
 # plt.show()
-plt.savefig('image/seg_pred.png', bbox_inches='tight')
+plt.savefig('seg_pred.png', bbox_inches='tight')
