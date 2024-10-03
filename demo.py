@@ -4,7 +4,8 @@ from torchvision import transforms
 from segearth_segmentor import SegEarthSegmentation
 
 img = Image.open('/data/lky/data/OpenEarthMap/img_dir/val/aachen_42.tif')
-name_list = ['grass', 'road', 'building', 'tree', 'water']
+name_list = ['background', 'bareland,barren', 'grass', 'pavement', 'road',
+             'tree,forest', 'water,river', 'cropland', 'building,roof,house']
 
 with open('./configs/my_name.txt', 'w') as writers:
     for i in range(len(name_list)):
@@ -18,6 +19,7 @@ writers.close()
 img_tensor = transforms.Compose([
     transforms.ToTensor(),
     transforms.Normalize([0.48145466, 0.4578275, 0.40821073], [0.26862954, 0.26130258, 0.27577711]),
+    transforms.Resize((448, 448))
 ])(img)
 
 img_tensor = img_tensor.unsqueeze(0).to('cuda')
