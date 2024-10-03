@@ -48,6 +48,7 @@ conda activate SegEarth
 
 # install torch and dependencies
 pip install -r requirements.txt
+# The dependent versions are not strict, and in general you only need to pay attention to mmcv and mmsegmentation.
 ```
 
 
