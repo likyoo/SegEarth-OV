@@ -23,7 +23,8 @@
     </h4>
 </div>
 
-<img src="assets/teaser.jpg" width="900px"/>
+<img src="https://github.com/user-attachments/assets/28675180-02de-476e-ad01-7c2138a2a943" width="100%"/>
+Visualization and performance of SegEarth-OV on open-vocabulary semantic segmentation of remote sensing images. We evaluate on 17 remote sensing datasets (including semantic segmentation, building extraction, road extraction, and flood detection tasks), and our SegEarth-OV consistently generates high-quality segmentation masks.
 
 </div>
 
@@ -83,12 +84,15 @@ python eval_all.py
 ```
 Results will be saved in `results.xlsx`.
 
-We provide the comparison results (in Appendix) on five datasets without background class by using our implementation as below:
+## Results
 
 <div>
-<img src="assets/results.png" width="500px"/>
+<img src="https://github.com/user-attachments/assets/445afb44-447b-4aa2-b6e7-c2e7bf2b5450" width="100%"/>
 </div>
 
+<div>
+<img src="https://github.com/user-attachments/assets/7270efea-2c8e-485c-a47c-48be8718000f" width="100%"/>
+</div>
 
 ## Citation
 
