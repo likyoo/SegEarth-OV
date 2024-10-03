@@ -182,7 +182,7 @@ class SegEarthSegmentation(BaseSegmentor):
             image_w, image_h = img[0].shape[-2], img[0].shape[-1]
             image_features = image_features.permute(0, 2, 1).view(1, self.feat_dim, feature_w, feature_h)
             with torch.cuda.amp.autocast():
-                image_features = self.upsampler(image_features, img)
+                image_features = self.upsampler(image_features, img).half()
             image_features = image_features.view(1, self.feat_dim, image_w * image_h).permute(0, 2, 1)
 
         image_features /= image_features.norm(dim=-1, keepdim=True)
