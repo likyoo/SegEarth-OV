@@ -3,7 +3,7 @@
 <h1>SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images</h1>
 
 <div>
-    <strong>make OVSS possible in remote sensing contexts</strong>
+    <strong>Make OVSS possible in remote sensing contexts</strong>
 </div>
 
 <div>
