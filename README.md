@@ -71,7 +71,7 @@ python demo.py
 Single-GPU:
 
 ```
-python eval.py --config ./config/cfg_DATASET.py --workdir YOUR_WORK_DIR
+python eval.py --config ./configs/cfg_DATASET.py --workdir YOUR_WORK_DIR
 ```
 
 Multi-GPU:
