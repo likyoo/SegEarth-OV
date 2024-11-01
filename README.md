@@ -39,8 +39,8 @@ Visualization and performance of SegEarth-OV on open-vocabulary semantic segment
 # refer to https://github.com/likyoo/SimFeatUp
 
 # 2. git clone this repository
-git clone https://github.com/mc-lan/ClearCLIP.git
-cd ClearCLIP
+git clone https://github.com/likyoo/SegEarth-OV.git
+cd SegEarth-OV
 
 # 3. create new anaconda env
 conda create -n SegEarth python=3.9
