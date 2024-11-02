@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images</h1>
+<h1>SegEarth-OV: Towards Training-Free Open-Vocabulary Segmentation for Remote Sensing Images</h1>
 
 <div>
     <strong>Make OVSS possible in remote sensing contexts</strong>
@@ -99,7 +99,7 @@ Results will be saved in `results.xlsx`.
 
 ```
 @article{li2024segearth,
-  title={SegEarth-OV: Towards Traning-Free Open-Vocabulary Segmentation for Remote Sensing Images},
+  title={SegEarth-OV: Towards Training-Free Open-Vocabulary Segmentation for Remote Sensing Images},
   author={Li, Kaiyu and Liu, ruixun and Cao, Xiangyong and Meng, Deyu and Zhi Wang},
   journal={arXiv preprint arXiv:2410.01768},
   year={2024}
