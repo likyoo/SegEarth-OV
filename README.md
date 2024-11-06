@@ -8,13 +8,16 @@
 
 <div>
     <a href='https://likyoo.github.io/' target='_blank'>Kaiyu Li</a><sup>1</sup>&emsp;
-    <a href='' target='_blank'>Ruixun Liu</a><sup>1</sup>&emsp;
+    <a href='https://scholar.google.com/citations?user=WTleRV8AAAAJ' target='_blank'>Ruixun Liu</a><sup>1</sup>&emsp;
     <a href='https://gr.xjtu.edu.cn/en/web/caoxiangyong' target='_blank'>Xiangyong Cao</a><sup>✉1</sup>&emsp;
+    <a href='https://web.xidian.edu.cn/xrbai' target='_blank'>Xueru Bai</a><sup>2</sup>&emsp;
+    <a href='https://faculty.xidian.edu.cn/ZF3' target='_blank'>Feng Zhou</a><sup>2</sup>&emsp;
     <a href='https://gr.xjtu.edu.cn/en/web/dymeng' target='_blank'>Deyu Meng</a><sup>1</sup>&emsp;
     <a href='https://gr.xjtu.edu.cn/en/web/zhiwang' target='_blank'>Zhi Wang</a><sup>1</sup>&emsp;
 </div>
 <div>
     <sup>1</sup>Xi'an Jiaotong University&emsp;
+    <sup>2</sup>Xidian University&emsp;
 </div>
 
 <div>
