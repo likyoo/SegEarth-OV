@@ -12,7 +12,7 @@ from utils import append_experiment_result
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description='ClearCLIP evaluation with MMSeg')
+        description='SegEarth-OV evaluation with MMSeg')
     parser.add_argument('--config', default='./configs/cfg_voc20.py')
     parser.add_argument('--work-dir', default='./work_logs/')
     parser.add_argument(
