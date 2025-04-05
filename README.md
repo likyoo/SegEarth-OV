@@ -1,6 +1,8 @@
 <div align="center">
 
-<h1>SegEarth-OV: Towards Training-Free Open-Vocabulary Segmentation for Remote Sensing Images (CVPR 2025 Oral)</h1>
+<h1>SegEarth-OV: Towards Training-Free Open-Vocabulary Segmentation for Remote Sensing Images</h1>
+
+<h3>✨CVPR 2025 Oral✨</h3>
 
 <div>
     <strong>Make OVSS possible in remote sensing contexts</strong>
