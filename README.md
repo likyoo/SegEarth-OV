@@ -103,11 +103,12 @@ Results will be saved in `results.xlsx`.
 ## Citation
 
 ```
-@article{li2024segearth,
-  title={SegEarth-OV: Towards Training-Free Open-Vocabulary Segmentation for Remote Sensing Images},
-  author={Li, Kaiyu and Liu, ruixun and Cao, Xiangyong and Bai, Xueru and Zhou, Feng and Meng, Deyu and Wang, Zhi},
-  journal={arXiv preprint arXiv:2410.01768},
-  year={2024}
+@inproceedings{li2025segearthov,
+  title={Segearth-ov: Towards training-free open-vocabulary segmentation for remote sensing images},
+  author={Li, Kaiyu and Liu, Ruixun and Cao, Xiangyong and Bai, Xueru and Zhou, Feng and Meng, Deyu and Wang, Zhi},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={10545--10556},
+  year={2025}
 }
 ```
 
